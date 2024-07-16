@@ -1,0 +1,103 @@
+.box {
+  width: 100%;
+  display: flex;
+}
+
+.bars-box {
+  width: 50%;
+  padding: 4rem 1rem 2.5rem;
+}
+
+.chart {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart #chart {
+  height: 100px;
+  width: 100px;
+}
+
+.bar-section {
+  margin-bottom: 1rem;
+}
+
+.bar-section .label {
+  margin-bottom: 0.7rem;
+}
+
+.bar-section .current-value {
+  font-size: 1.5rem;
+}
+
+.bar-section .values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-section .values,
+.min .max {
+  font-size: 12px;
+  color: rgb(0, 0, 0, 0.6);
+}
+.tenure fieldset {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: 0.5px solid black;
+}
+.tenure fieldset legend {
+  font-size: 0.7rem;
+  color: rgb(137, 131, 131);
+}
+
+.tenure fieldset select {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+
+  cursor: pointer;
+  padding-bottom: 0.4rem;
+}
+
+.chart-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.chart-container {
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+  }
+
+  .bars-box {
+    width: 95%;
+  }
+
+  .chart {
+    width: 100%;
+  }
+
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .chart-container h2 {
+    font-size: 1.5rem;
+  }
+}
